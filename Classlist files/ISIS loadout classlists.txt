@@ -1,0 +1,70 @@
+
+** UNIFORM ** 
+
+this forceAddUniform "usm_bdu_blk";
+this forceAddUniform "usm_bdu_dcu";
+this forceAddUniform "usm_bdu_d";
+this forceAddUniform "usm_bdu_w"; (peshmerga one)
+
+** VESTS **
+
+this addVest "tin_vest_fra_tacvest_black";
+
+
+
+
+** BACKPACKS **
+(medium)
+this addBackpack "CORX_Kitbag_multicam";
+this addBackpack "CORX_Kitbag_6CDesert";
+
+(small)
+this addBackpack "rhsusf_falconii_mc";
+this addBackpack "rhsusf_falconii";
+
+(rpg)
+this addBackpack "rhs_rpg_empty";
+
+
+** RIFLE **
+
+
+
+** AMMO **
+
+
+
+
+comment "Exported from Arsenal by Luiz Silveira";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "usm_bdu_d";
+
+for "_i" from 1 to 3 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+this addItemToVest "rhs_30Rnd_762x39mm_tracer";
+this addItemToVest "rhs_30Rnd_762x39mm_89";
+this addItemToVest "rhs_30Rnd_762x39mm_U";
+this addHeadgear "rhs_6b26_green";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_akms";
+this addPrimaryWeaponItem "rhs_acc_2dpZenit";
+this addWeapon "hgun_Rook40_F";
+
+comment "Add items";
+
+comment "Set identity";
+this setFace "PersianHead_A3_01";
+this setSpeaker "Male01PER";
+
+
