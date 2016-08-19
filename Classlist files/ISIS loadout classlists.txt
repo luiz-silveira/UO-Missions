@@ -6,65 +6,46 @@ this forceAddUniform "usm_bdu_dcu";
 this forceAddUniform "usm_bdu_d";
 this forceAddUniform "usm_bdu_w"; (peshmerga one)
 
+
+this addGoggles "G_Balaclava_blk";
+
+
 ** VESTS **
 
 this addVest "tin_vest_fra_tacvest_black";
 
 
 
-
 ** BACKPACKS **
-(medium)
-this addBackpack "CORX_Kitbag_multicam";
-this addBackpack "CORX_Kitbag_6CDesert";
-
 (small)
-this addBackpack "rhsusf_falconii_mc";
-this addBackpack "rhsusf_falconii";
+this addBackpack "B_AssaultPack_blk";
 
 (rpg)
 this addBackpack "rhs_rpg_empty";
 
+(medic)
+this addBackpack "tin_backpack_medic_black";
+
 
 ** RIFLE **
 
-
+this addWeapon "rhs_weap_akm";
 
 ** AMMO **
 
 
-
-
-comment "Exported from Arsenal by Luiz Silveira";
-
-comment "Remove existing items";
-removeAllWeapons this;
-removeAllItems this;
-removeAllAssignedItems this;
-removeUniform this;
-removeVest this;
-removeBackpack this;
-removeHeadgear this;
-removeGoggles this;
-
-comment "Add containers";
-this forceAddUniform "usm_bdu_d";
-
 for "_i" from 1 to 3 do {this addItemToVest "rhs_30Rnd_762x39mm";};
 this addItemToVest "rhs_30Rnd_762x39mm_tracer";
+
 this addItemToVest "rhs_30Rnd_762x39mm_89";
-this addItemToVest "rhs_30Rnd_762x39mm_U";
-this addHeadgear "rhs_6b26_green";
+this addItemToVest "rhs_30Rnd_762x39mm_U"; (subsonic)
 
-comment "Add weapons";
-this addWeapon "rhs_weap_akms";
-this addPrimaryWeaponItem "rhs_acc_2dpZenit";
-this addWeapon "hgun_Rook40_F";
 
-comment "Add items";
+** THROWABLES **
 
-comment "Set identity";
-this setFace "PersianHead_A3_01";
-this setSpeaker "Male01PER";
+this addItemToVest "rhs_mag_rgd5";
+this addItemToVest "rhs_mag_rdg2_white";
+this addItemToVest "rhs_mag_rdg2_black";
+
 
 

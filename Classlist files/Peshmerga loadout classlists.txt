@@ -4,6 +4,7 @@
 this forceAddUniform "usm_bdu_w";
 this addHeadgear "rhs_6b26_green";
 
+
 ** VESTS **
 
 this addVest "V_TacVest_khk";
@@ -24,11 +25,14 @@ this addBackpack "rhsusf_falconii";
 (rpg)
 this addBackpack "rhs_rpg_empty";
 
+(medic)
+this addBackpack "tin_backpack_medic_tan";
 
 ** RIFLE **
 
 this addWeapon "rhs_weap_akms";
 this addPrimaryWeaponItem "rhs_acc_2dpZenit";
+
 
 ** AMMO **
 
@@ -37,3 +41,11 @@ this addItemToVest "rhs_30Rnd_762x39mm_tracer";
 
 this addItemToVest "rhs_30Rnd_762x39mm_89";
 this addItemToVest "rhs_30Rnd_762x39mm_U"; (subsonic)
+
+
+** THROWABLES **
+
+this addItemToVest "rhs_mag_rgd5";
+this addItemToVest "rhs_mag_rdg2_white";
+this addItemToVest "rhs_mag_rdg2_black";
+
