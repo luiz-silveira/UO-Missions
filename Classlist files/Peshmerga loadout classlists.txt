@@ -1,0 +1,39 @@
+
+** UNIFORM ** 
+
+this forceAddUniform "usm_bdu_w";
+this addHeadgear "rhs_6b26_green";
+
+** VESTS **
+
+this addVest "V_TacVest_khk";
+this addVest "V_TacVest_camo";
+this addVest "V_TacVest_brn";
+this addVest "V_TacVest_oli";
+
+
+** BACKPACKS **
+(medium)
+this addBackpack "CORX_Kitbag_multicam";
+this addBackpack "CORX_Kitbag_6CDesert";
+
+(small)
+this addBackpack "rhsusf_falconii_mc";
+this addBackpack "rhsusf_falconii";
+
+(rpg)
+this addBackpack "rhs_rpg_empty";
+
+
+** RIFLE **
+
+this addWeapon "rhs_weap_akms";
+this addPrimaryWeaponItem "rhs_acc_2dpZenit";
+
+** AMMO **
+
+for "_i" from 1 to 3 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+this addItemToVest "rhs_30Rnd_762x39mm_tracer";
+
+this addItemToVest "rhs_30Rnd_762x39mm_89";
+this addItemToVest "rhs_30Rnd_762x39mm_U"; (subsonic)
